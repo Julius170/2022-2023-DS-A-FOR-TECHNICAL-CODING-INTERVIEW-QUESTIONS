@@ -1,0 +1,17 @@
+STACKS  FILO
+-  lookup => 0(n)
+-  pop => 0(1)
+-  push => 0(1)
+-  peek => 0(1)
+
+
+Queues FIFO
+
+-  lookup => 0(n)
+-  dequeue=> 0(1)
+-  enqueue => 0(1)
+-  peek => 0(1)
+
+
+
+ 
