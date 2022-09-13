@@ -6,7 +6,7 @@ class Node {
         this.next = null;
     }
 }
-class Stack {
+class LinkedStack {
     constructor() {
         this.top = null;
         this.bottom = null;
@@ -48,19 +48,51 @@ class Stack {
 
 
 
+// TESTING
 
-
-const myStack = new Stack();
-console.log(myStack.peek());
-    myStack.push("google");
-    myStack.push("udemy");
-    myStack.push("discord");
-    console.log(myStack.peek());
-    console.log(myStack.pop());
-    console.log(myStack.pop());
-    // myStack.pop();
-    // myStack.pop();
+// const myStack = new LinkedStack();
+// console.log(myStack.peek());
+//     myStack.push("google");
+//     myStack.push("udemy");
+//     myStack.push("discord");
+//     console.log(myStack.peek());
+//     console.log(myStack.pop());
+//     console.log(myStack.pop());
+// myStack.pop();
+// myStack.pop();
 
 
 // STACKS WITH ARRAYS
 
+
+class ArrayStack {
+    constructor() {
+        this.array = [];
+    }
+
+    peek(){
+        return(this.array[this.array.length-1])
+    }
+
+    push(value) {
+        this.array.push(value);
+        return this;
+    }
+
+    pop() {
+        this.array.pop();
+        return this;
+    }
+}
+ 
+// TESTING 
+
+// const newStack = new ArrayStack();
+// console.log(newStack.peek());
+// console.log(newStack.push("google"));
+// console.log(newStack.push("udemy"));
+// console.log(newStack.push("discord"));
+// console.log(newStack.peek());
+// console.log(newStack.pop());
+// console.log(newStack.pop());
+// console.log(newStack.peek()); 
