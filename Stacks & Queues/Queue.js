@@ -1,3 +1,5 @@
+// QUEUES USING LINKED LIST
+
 class Node {
     constructor(value) {
         this.value = value;
@@ -52,7 +54,7 @@ class Queue {
     }
 }
 
-
+// TESTING 
 const myQueue = new Queue()
 console.log(myQueue.peek())
 console.log(myQueue.enqueue("Joy"))
