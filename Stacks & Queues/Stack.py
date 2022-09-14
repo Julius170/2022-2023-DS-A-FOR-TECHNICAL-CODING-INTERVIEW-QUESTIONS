@@ -57,31 +57,46 @@ class LinkedStacks:
 
 # TESTING
 
-if __name__  ==  "__main__":
-    myStack = LinkedStacks()
-    print(myStack.peek())
-    print(myStack.push("google"))
-    print(myStack.push("udemy"))
-    print(myStack.push("discord"))
-    print(myStack.pop())
-    print(myStack.pop())
-    print(myStack.pop())
-    print(myStack.peek())
+# myStack = LinkedStacks()
+# print(myStack.peek())
+# print(myStack.push("google"))
+# print(myStack.push("udemy"))
+# print(myStack.push("discord"))
+# print(myStack.pop())
+# print(myStack.pop())
+# print(myStack.peek())
 
 # STACKS WITH ARRAYS
 
-# class Stack:
-#     def __init__(self):
-#         self.array = []
+class ArraysStack:
+    def __init__(self):
+        self.array = []
 
-#     def peek(self):
-#         print(self.array[len(self.array)-1])
-#         return self
+    def peek(self):
+        if len(self.array) == 0:
+            return ("Stack is Empty")
+        else:
+            return self.array[len(self.array)-1]
 
-#     def push(self, value):
-#         self.array.push(value)
-#         return self
+
+    def push(self, value):
+        self.array.append(value)
+        return self.array
     
-#     def pop(self):
-#         self.array.pop()
-#         return self
+    def pop(self):
+        self.array.pop()
+        return self.array
+
+# TESTING
+
+newStack = ArraysStack()
+print(newStack.peek())
+print(newStack.push("google"))
+print(newStack.push("facebook"))
+print(newStack.push("tiktok"))
+print(newStack.push("microsoft"))
+print(newStack.pop())
+print(newStack.pop())
+print(newStack.pop())
+print(newStack.peek())
+
