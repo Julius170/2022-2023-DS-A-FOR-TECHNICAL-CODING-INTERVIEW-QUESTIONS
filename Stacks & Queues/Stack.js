@@ -50,16 +50,16 @@ class LinkedStack {
 
 // TESTING
 
-// const myStack = new LinkedStack();
-// console.log(myStack.peek());
-//     myStack.push("google");
-//     myStack.push("udemy");
-//     myStack.push("discord");
-//     console.log(myStack.peek());
-//     console.log(myStack.pop());
-//     console.log(myStack.pop());
-// myStack.pop();
-// myStack.pop();
+const myStack = new LinkedStack();
+console.log(myStack.peek());
+    myStack.push("google");
+    myStack.push("udemy");
+    myStack.push("discord");
+    console.log(myStack.peek());
+    console.log(myStack.pop());
+    console.log(myStack.pop());
+myStack.pop();
+myStack.pop();
 
 
 // STACKS WITH ARRAYS
@@ -87,12 +87,12 @@ class ArrayStack {
  
 // TESTING 
 
-// const newStack = new ArrayStack();
-// console.log(newStack.peek());
-// console.log(newStack.push("google"));
-// console.log(newStack.push("udemy"));
-// console.log(newStack.push("discord"));
-// console.log(newStack.peek());
-// console.log(newStack.pop());
-// console.log(newStack.pop());
-// console.log(newStack.peek()); 
+const newStack = new ArrayStack();
+console.log(newStack.peek());
+console.log(newStack.push("google"));
+console.log(newStack.push("udemy"));
+console.log(newStack.push("discord"));
+console.log(newStack.peek());
+console.log(newStack.pop());
+console.log(newStack.pop());
+console.log(newStack.peek()); 
