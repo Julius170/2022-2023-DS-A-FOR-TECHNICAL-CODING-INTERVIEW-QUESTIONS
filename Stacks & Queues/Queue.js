@@ -7,7 +7,7 @@ class Node {
     }
 } 
 
-class Queue {
+class LinkedQueue {
     constructor() {
         this.first = null;
         this.last  = null;
@@ -55,7 +55,7 @@ class Queue {
 }
 
 // TESTING 
-const myQueue = new Queue()
+const myQueue = new LinkedQueue()
 console.log(myQueue.peek())
 console.log(myQueue.enqueue("Joy"))
 console.log(myQueue.enqueue("Kelvin"))
