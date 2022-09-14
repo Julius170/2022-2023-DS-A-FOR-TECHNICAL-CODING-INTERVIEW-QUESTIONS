@@ -22,7 +22,7 @@ class LinkedStacks:
         if self.isEmpty() == True:
             return "Stack is Empty"
         else:
-            return self.top.value
+            return self.top
 
     def push(self, value):
         
@@ -30,7 +30,8 @@ class LinkedStacks:
             self.top = Node(value)
         else: 
             newNode = Node(value)
-            newNode.next = self.top
+            # newNode.next = self.top
+            self.top.next = newNode
             self.top = newNode
         
         self.length +=1

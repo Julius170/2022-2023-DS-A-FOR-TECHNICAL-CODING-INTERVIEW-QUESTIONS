@@ -2,7 +2,7 @@
 
 class Node:
     def __init__ (self, value):
-        self.valaue = value
+        self.value = value
         self.next = None
     
 
@@ -14,11 +14,11 @@ class LinkedQueue:
 
     def isEmpty(self):
         if self.first == None:
-            return False
-        else: return True
+            return True
+        else: return False
 
     def peek(self):
-        return self.last
+        return self.last.value
     
     def enqueue(self, value):
         newNode = Node(value)
@@ -31,21 +31,40 @@ class LinkedQueue:
         else:
             self.last.next == newNode
             self.last = newNode
-        
-        return self
+        self.length +=1
+        return self.last.value
 
     def dequeue(self):
-        if self.isEmpty() == True:
-            return "Queue is already Empty"
+        if not self.first:
+            return "Queue is Empty"
         elif self.first == self.last:
-            self.first = None        
+            self.first = None
             self.last = None
+            return "Queue is Empty"
         else:
-            firstNode = self.first
+            # firstNode = self.first
             self.first = self.first.next
-            firstNode = None
+            # firstNode = None
+        self.length -=1
+        return self.first
 
-        return self
+
+
+# TESTING
+
+# myQueue = LinkedQueue()
+# print(myQueue.isEmpty())
+# print(myQueue.peek())
+# print(myQueue.enqueue("Lovelle"))
+# print(myQueue.enqueue("Jade"))
+# print(myQueue.enqueue("Saphir"))
+# print(myQueue.dequeue())
+# print(myQueue.peek()) 
+
+
+
+
+
 
 
 

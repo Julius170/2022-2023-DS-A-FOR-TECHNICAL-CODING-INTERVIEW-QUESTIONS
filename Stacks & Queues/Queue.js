@@ -45,7 +45,7 @@ class LinkedQueue {
         if (!this.first){
             return ("Queue is empty")
         }
-        if (this.first == this.next) {
+        if (this.first == this.last) {
             this.last = null 
         }
         this.first = this.first.next 
