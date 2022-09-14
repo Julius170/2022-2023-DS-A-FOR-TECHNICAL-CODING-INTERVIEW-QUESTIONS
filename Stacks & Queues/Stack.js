@@ -18,7 +18,7 @@ class LinkedStack {
 
     }
     push(value) {
-       const newNode  = new Node
+       const newNode  = new Node(value)
        newNode.value = value 
        if (this.length === 0) {
             this.top = newNode;
