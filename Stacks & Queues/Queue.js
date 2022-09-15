@@ -65,3 +65,7 @@ console.log(myQueue.enqueue("Logan"))
 console.log(myQueue.dequeue());
 console.log(myQueue.dequeue());
 console.log(myQueue.dequeue());
+
+
+// QUEUE USING A STACK
+
