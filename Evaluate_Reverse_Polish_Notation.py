@@ -10,6 +10,7 @@ tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"] # answer 22
 # Using a stack:
 
 stack = []
+
 # Loping through every charaters in the token array:
 for i in tokens:
 
