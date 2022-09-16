@@ -77,7 +77,7 @@ class ArraysStack:
         if len(self.array) == 0:
             return ("Stack is Empty")
         else:
-            return self.array[len(self.array)-1]
+            return self.array[-1]
 
 
     def push(self, value):

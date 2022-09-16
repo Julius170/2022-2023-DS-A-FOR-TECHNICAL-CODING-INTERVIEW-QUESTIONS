@@ -8,9 +8,9 @@
 # Every close bracket has a corresponding open bracket of the same type.
 
 # Test Cases 
-# s = "()[]{}"
-# s = "(]"
-s = "(){}}{"
+# s = "()[]{}" # True
+# s = "(]"     # False
+s = "(){}}{"   # False
 
 # Function Solution 
 def ValidParenthesis(s):
