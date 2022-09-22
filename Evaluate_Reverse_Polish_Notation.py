@@ -50,4 +50,3 @@ for i in tokens:
 # Otherwise add the current chracter to the stack
     elif i.isnumeric() or type(int(i) == int):
         stack.append(i)
-

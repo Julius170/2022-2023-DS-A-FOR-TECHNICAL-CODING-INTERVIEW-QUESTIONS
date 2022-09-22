@@ -60,15 +60,3 @@ class LinkedQueue:
 # print(myQueue.enqueue("Saphir"))
 # print(myQueue.dequeue())
 # print(myQueue.peek()) 
-
-
-
-
-
-
-
-
-         
-
-
-        
