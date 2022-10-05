@@ -52,8 +52,8 @@ class LinkedQueue:
 
 # TESTING
 
-# myQueue = LinkedQueue()
-# print(myQueue.isEmpty())
+myQueue = LinkedQueue()
+print(myQueue.isEmpty())
 # print(myQueue.peek())
 # print(myQueue.enqueue("Lovelle"))
 # print(myQueue.enqueue("Jade"))

@@ -120,4 +120,3 @@ myLinkedList.reverse();
 console.log(myLinkedList.printList());
 
 // console.log(myLinkedList)
-
