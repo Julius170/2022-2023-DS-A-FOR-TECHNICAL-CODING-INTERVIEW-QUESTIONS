@@ -1,50 +1,4 @@
-
-
-# class Node:
-#     def __init__(self, value ):
-#         self.value = value,
-#         self.next = None,
-#         self.prev = None,
-
-
-
-# class DoublyDoublyLinkedList:
-#     def __init__(self,):
-#         self.head = None
-#         self.tail = self.head
-#         self.length = 0
-        
-#     def printList(self, curr):
-#         # arr = []
-#         # curr = self.head
-#         while curr:
-#             print(curr.value)
-#             last = curr
-#             # arr.append(curr)
-#             curr = curr.next
-#         # return arr
-
-#         # def printList(self, node):
-#     #   while (node is not None):
-#     #      print(node.value),
-#     #      last = node
-#     #      node = node.next
-
-
-#     def append(self, value):
-#         newNode = Node(value)
-#         if self.length == 0:
-#             self.head = newNode
-#             self.tail  = self.head
-#             self.length += 1
-#             return self
-#         self.tail.next = newNode
-#         newNode.prev = self.tail
-#         self.tail = newNode
-#         return self
-
-
-
+# Doubly Linked List
 
 class Node:
    def __init__(self, value):
@@ -56,7 +10,7 @@ class doublyLinkedList:
     def __init__(self, value):
       self.head = Node(value)
       self.tail = self.head
-      self.length = 0
+      self.length = 1
 
     def isEmpty(self):
         if self.head == self.tail:
@@ -66,20 +20,18 @@ class doublyLinkedList:
 # Adding value elements		
     def append(self, value):
         newNode = Node(value)
-        
         self.tail.next = newNode
         newNode.prev = self.tail
-        # newNode.next = None
         self.tail = newNode
         self.length += 1
+
+
     def prepend(self, value):
         newNode = Node(value)
         self.head.prev = newNode
         newNode.next = self.head
         self.head = newNode
         self.length +=1
-
-
 
 
 # Print the Doubly Linked list		
@@ -102,7 +54,7 @@ class doublyLinkedList:
     def insert(self, index, value):
         if index > self.length:
             self.append(value)
-        if index == 0:
+        elif index == 0:
             self.prepend(value)
         else:
             newNode = Node(value)
@@ -112,7 +64,8 @@ class doublyLinkedList:
             node_after.prev = newNode
             index_po.next = newNode
             newNode.prev = index_po
-        self.length +=1
+            self.length +=1
+
 
     def remove(self, index):
         if index >= self.length:
@@ -127,6 +80,7 @@ class doublyLinkedList:
             node_after = rem.next
             node_before.next = node_after
             node_after.prev = node_before
+        self.length -=1
 
 
         
@@ -142,18 +96,9 @@ dllist.insert(2, 555)
 dllist.printList()
 dllist.remove(0)
 dllist.printList()
+print(dllist.length)
 
 
-
-
-# list = DoublyDoublyLinkedList()
-
-# list.append(22)
-# list.append(22)
-# list.append(22)
-# print(list.append(22))
-
-# list.printList(list.head)
 
 
 

@@ -39,7 +39,7 @@ class LinkedList {
             array.push(currentNode.value);
             currentNode = currentNode.next;
         }
-        return array; 
+        console.log(array); 
     };
 
     insert(index, value) {
@@ -117,6 +117,5 @@ myLinkedList.insert(0, 100);
 myLinkedList.remove(6);
 myLinkedList.reverse();
 
-console.log(myLinkedList.printList());
+myLinkedList.printList();
 
-// console.log(myLinkedList)
