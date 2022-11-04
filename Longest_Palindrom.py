@@ -1,0 +1,3 @@
+s = "abccccdd"
+
+print(s)
